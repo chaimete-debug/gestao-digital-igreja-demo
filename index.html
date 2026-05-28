@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo — Infulene Gestão Digital</title>
+  <meta name="description" content="Demonstração pública do sistema de gestão digital para igrejas locais." />
+  <meta name="theme-color" content="#173f26" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand">
+        <div class="brand-mark">✦</div>
+        <div>
+          <strong>Infulene Gestão Digital</strong>
+          <span>Demo para divulgação</span>
+        </div>
+      </div>
+      <a class="cta small" href="#demo">Ver demonstração</a>
+    </nav>
+    <section class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Sistema para igrejas locais</span>
+        <h1>Gestão digital de cultos, escalas, visitantes e finanças.</h1>
+        <p>Esta é uma versão demonstrativa, com dados fictícios, preparada para apresentação a pastores, secretários, tesoureiros e líderes de ministérios.</p>
+        <div class="hero-actions">
+          <a class="cta" href="#demo">Abrir demo</a>
+          <a class="ghost" href="#beneficios">Ver benefícios</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="phone-preview">
+          <div class="phone-head"></div>
+          <div class="mini-kpis">
+            <div><strong>8</strong><span>Cultos</span></div>
+            <div><strong>23</strong><span>Visitantes</span></div>
+            <div><strong>18</strong><span>Movimentos</span></div>
+          </div>
+          <div class="mini-card"><b>Relatório dos Cultos</b><span>Participantes, visitantes, ofertas e dízimos.</span></div>
+          <div class="mini-card"><b>Conciliação Financeira</b><span>Saldos por conta, rubrica e departamento.</span></div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="beneficios" class="section benefits">
+      <div class="section-head">
+        <span class="eyebrow">O que a demo mostra</span>
+        <h2>Um modelo profissional para substituir registos dispersos.</h2>
+      </div>
+      <div class="benefit-grid">
+        <article><span>🗓️</span><h3>Escalas</h3><p>Planeamento de dirigentes, pregadores, acolhimento e louvor.</p></article>
+        <article><span>📋</span><h3>Cultos</h3><p>Resumo de participantes, visitantes, baptismos, decisões, ofertas e dízimos.</p></article>
+        <article><span>👥</span><h3>Visitantes</h3><p>Cadastro simples para visitantes e membros, com possibilidade de QR Code.</p></article>
+        <article><span>💰</span><h3>Finanças</h3><p>Entradas, saídas, saldos, conciliação por conta, rubrica e departamento.</p></article>
+      </div>
+    </section>
+
+    <section id="demo" class="demo-shell">
+      <aside class="sidebar">
+        <div class="brand side-brand">
+          <div class="brand-mark">✦</div>
+          <div>
+            <strong>Demo Igreja Local</strong>
+            <span>Dados fictícios</span>
+          </div>
+        </div>
+        <button class="nav active" data-view="geral">Visão Geral</button>
+        <button class="nav" data-view="escalas">Escalas</button>
+        <button class="nav" data-view="cultos">Relatórios</button>
+        <button class="nav" data-view="visitantes">Visitantes</button>
+        <button class="nav" data-view="financeiro">Financeiro</button>
+        <button class="nav" data-view="lancamento">Novo registo</button>
+        <div class="demo-note"><strong>Modo Demo</strong><span>Nenhum dado é gravado. Esta versão serve apenas para apresentação.</span></div>
+      </aside>
+
+      <section class="workspace">
+        <div class="mobile-tabs">
+          <button class="nav active" data-view="geral">Geral</button>
+          <button class="nav" data-view="cultos">Cultos</button>
+          <button class="nav" data-view="visitantes">Visitantes</button>
+          <button class="nav" data-view="financeiro">Finanças</button>
+        </div>
+
+        <section class="view active" id="view-geral">
+          <div class="page-title"><span>📊</span><div><h2>Visão Geral</h2><p>Resumo consolidado da igreja local.</p></div></div>
+          <div class="kpi-grid">
+            <div class="kpi"><small>Cultos registados</small><strong>8</strong></div>
+            <div class="kpi"><small>Visitantes</small><strong>23</strong></div>
+            <div class="kpi"><small>Entradas</small><strong>49.820,00 MZN</strong></div>
+            <div class="kpi"><small>Saldo actual</small><strong>36.450,00 MZN</strong></div>
+          </div>
+          <div class="two-col">
+            <article class="panel"><h3>Top rubricas</h3><div class="bar"><span>Dízimos</span><b style="width:80%"></b></div><div class="bar"><span>Ofertas</span><b style="width:55%"></b></div><div class="bar"><span>Missões</span><b style="width:35%"></b></div></article>
+            <article class="panel"><h3>Visitantes por origem</h3><ul class="clean-list"><li>Convite de membro — 12</li><li>Redes sociais — 6</li><li>Passou pela igreja — 5</li></ul></article>
+          </div>
+        </section>
+
+        <section class="view" id="view-escalas">
+          <div class="page-title"><span>🗓️</span><div><h2>Plano de Cultos e Escalas</h2><p>Organização das responsabilidades do culto.</p></div></div>
+          <div class="filter-row"><label>Mês <input type="month" value="2026-05"></label><label>Função <select><option>Todos</option><option>Dirigente</option><option>Pregador</option><option>Acolhimento</option><option>Louvor</option></select></label></div>
+          <div class="table-card"><table><thead><tr><th>Data</th><th>Hora</th><th>Tipo</th><th>Função</th><th>Nome</th></tr></thead><tbody><tr><td>11/05/2026</td><td>10:00</td><td>1º Culto Dominical</td><td>Pregador</td><td>Rev. Mateus Cossa</td></tr><tr><td>11/05/2026</td><td>10:00</td><td>1º Culto Dominical</td><td>Acolhimento</td><td>Joana Magaia; Esmeralda Sauane</td></tr></tbody></table></div>
+        </section>
+
+        <section class="view" id="view-cultos">
+          <div class="page-title"><span>📋</span><div><h2>Relatório dos Cultos</h2><p>Indicadores dos cultos realizados.</p></div></div>
+          <div class="kpi-grid"><div class="kpi"><small>Total participantes</small><strong>286</strong></div><div class="kpi"><small>Total visitantes</small><strong>23</strong></div><div class="kpi"><small>Baptismos</small><strong>4</strong></div><div class="kpi"><small>Decisões</small><strong>9</strong></div></div>
+          <article class="culto-card"><h3>1º Culto Dominical <span>86 PAX</span></h3><p>📅 11/05/2026 · ⏰ 10:00 – 11:45</p><div class="culto-grid"><span>Visitantes <b>3</b></span><span>Dízimos <b>3.096,00 MZN</b></span><span>Ofertas <b>3.200,00 MZN</b></span><span>Total <b>6.296,00 MZN</b></span></div></article>
+        </section>
+
+        <section class="view" id="view-visitantes">
+          <div class="page-title"><span>👥</span><div><h2>Registo de Visitantes</h2><p>Acompanhamento dos visitantes e contactos.</p></div></div>
+          <div class="kpi-grid"><div class="kpi"><small>Total</small><strong>23</strong></div><div class="kpi"><small>1ª visita</small><strong>14</strong></div><div class="kpi"><small>Querem contacto</small><strong>11</strong></div><div class="kpi"><small>Pedidos de oração</small><strong>7</strong></div></div>
+          <div class="table-card"><table><thead><tr><th>Data</th><th>Nome</th><th>Bairro</th><th>1ª vez</th><th>Contacto</th></tr></thead><tbody><tr><td>11/05/2026</td><td>Carla Mucavele</td><td>Tchumene</td><td>Sim</td><td>Sim</td></tr><tr><td>18/05/2026</td><td>Daniel Tembe</td><td>Matola</td><td>Não</td><td>Não</td></tr></tbody></table></div>
+        </section>
+
+        <section class="view" id="view-financeiro">
+          <div class="page-title"><span>💰</span><div><h2>Relatório Financeiro</h2><p>Conciliação, rubricas e departamentos.</p></div></div>
+          <div class="kpi-grid"><div class="kpi"><small>Saldo anterior</small><strong>12.000,00 MZN</strong></div><div class="kpi"><small>Entradas</small><strong>49.820,00 MZN</strong></div><div class="kpi"><small>Saídas</small><strong>25.370,00 MZN</strong></div><div class="kpi"><small>Saldo final</small><strong>36.450,00 MZN</strong></div></div>
+          <h3>Conciliação e resumo de contas</h3><div class="table-card"><table><thead><tr><th>Conta / Canal</th><th>Saldo anterior</th><th>Entrada</th><th>Saída</th><th>Saldo final</th></tr></thead><tbody><tr><td>Caixa</td><td>5.000,00</td><td>12.000,00</td><td>4.500,00</td><td>12.500,00</td></tr><tr><td>M-Pesa</td><td>7.000,00</td><td>37.820,00</td><td>20.870,00</td><td>23.950,00</td></tr></tbody></table></div>
+          <h3>Por Departamento/Ministério</h3><div class="table-card"><table><thead><tr><th>Departamento/Ministério</th><th>Saldo anterior</th><th>Entrada</th><th>Saída</th><th>Saldo final</th></tr></thead><tbody><tr><td>Administração</td><td>8.000,00</td><td>28.000,00</td><td>12.500,00</td><td>23.500,00</td></tr><tr><td>JNI</td><td>1.500,00</td><td>5.200,00</td><td>3.000,00</td><td>3.700,00</td></tr><tr><td>MNI</td><td>2.500,00</td><td>8.300,00</td><td>4.100,00</td><td>6.700,00</td></tr></tbody></table></div>
+        </section>
+
+        <section class="view" id="view-lancamento">
+          <div class="page-title"><span>✍️</span><div><h2>Formulário de lançamento</h2><p>Exemplo visual. Nesta demo, a submissão não grava dados.</p></div></div>
+          <div class="form-preview-grid">
+            <article class="form-example"><strong>🗓️ Plano de cultos e escalas</strong><span>Data, hora, tipo de culto, dirigente, pregador, acolhedores, louvor e observações.</span></article>
+            <article class="form-example"><strong>📋 Relatório dos cultos</strong><span>Participantes, visitantes, baptismos, decisões, Santa Ceia, dízimos, ofertas e observações.</span></article>
+            <article class="form-example"><strong>👥 Visitantes e membros</strong><span>Nome, contacto, bairro, primeira visita, pedido de oração e dados de membro efectivo.</span></article>
+            <article class="form-example"><strong>💰 Registo financeiro</strong><span>Entrada ou saída, rúbrica, departamento/ministério, conta, método, valor e descrição.</span></article>
+          </div>
+          <form class="demo-form" onsubmit="event.preventDefault(); alert('Modo demo: nenhum dado foi gravado.');">
+            <label>O que deseja preencher?<select><option>Plano de cultos e escalas</option><option>Relatório dos cultos</option><option>Registo de visitantes e membros</option><option>Registo financeiro</option></select></label>
+            <label>Data<input type="date" value="2026-05-18"></label>
+            <label>Rúbrica / área<select><option>Dízimos</option><option>Ofertas</option><option>Acolhimento</option><option>Relatório do culto</option></select></label>
+            <label>Departamento/Ministério<input type="text" value="Administração"></label>
+            <label>Valor ou quantidade<input type="text" value="3.500,00 MZN"></label>
+            <label class="full">Descrição<textarea placeholder="Exemplo de lançamento">Recebimento de dízimos e ofertas do culto dominical.</textarea></label>
+            <button class="cta" type="submit">Submeter</button>
+          </form>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">Demo estática para divulgação. Para uso real, active o backend e a base de dados.</footer>
+  <script src="app.js?v=demo2"></script>
+</body>
+</html>
